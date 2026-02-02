@@ -1,3 +1,11 @@
+:root {
+  --french-blue: #424874ff;
+  --periwinkle: #dcd6f7ff;
+  --periwinkle-2: #a6b1e1ff;
+  --pale-slate: #cacfd6ff;
+  --azure-mist: #d6e5e3ff;
+}
 body {
-  background-color: plum;
+  background-color: var(--periwinkle);
+  color: var(--french-blue);
 }
