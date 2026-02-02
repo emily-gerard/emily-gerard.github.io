@@ -53,4 +53,5 @@ nav a {
 img {
   border: 2px sold var(--azure-mist);
   border-radius: 8px;
+  padding: 8px;
 }
