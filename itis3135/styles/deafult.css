@@ -5,6 +5,7 @@
   --pale-slate: #cacfd6ff;
   --azure-mist: #d6e5e3ff;
 }
+
 body {
   background-color: var(--periwinkle);
   color: var(--french-blue);
@@ -44,14 +45,15 @@ a:active {
 
 nav {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 0.75rem 1rem;
+  padding: 12px 16px;
   background-color: var(--azure-mist);
   border-radius: 12px;
+  position: fixed;
 }
 
 nav a {
   display: inline-block;
-  padding: 0.4rem 0.8rem;
+  padding: 6.4px 12.8px;
   background-color: var(--periwinkle);
   border-radius: 8px;
 }
@@ -72,7 +74,7 @@ img {
 footer {
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 0.75rem 1rem;
+  padding: 12px 16px;
   background-color: var(--azure-mist);
   border-radius: 12px;
 }
