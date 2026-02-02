@@ -54,6 +54,7 @@ nav a {
   padding: 0.4rem 0.8rem;
   background-color: var(--periwinkle);
   border-radius: 8px;
+  position: fixed;
 }
 
 nav ul {
