@@ -10,7 +10,7 @@ body {
   color: var(--french-blue);
   margin: 0px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  max-width: 70ch;
+  max-width: 900ch;
 }
 
 p {
