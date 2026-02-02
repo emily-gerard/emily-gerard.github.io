@@ -22,3 +22,19 @@ h2,
 h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
+a:link {
+  color: var(--french-blue);
+}
+
+a:visited {
+  color: #2f345f;
+}
+
+a:hover {
+  color: var(--periwinkle-2);
+}
+
+a:active {
+  color: #1f2345;
+}
