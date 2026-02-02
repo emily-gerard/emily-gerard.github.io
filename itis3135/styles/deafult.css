@@ -8,7 +8,7 @@
 body {
   background-color: var(--periwinkle);
   color: var(--french-blue);
-  margin: 0px;
+  margin: 0 auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   max-width: 900ch;
 }
