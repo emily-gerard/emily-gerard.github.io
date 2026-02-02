@@ -43,3 +43,8 @@ nav {
   background-color: var(--azure-mist);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+img {
+  border: 2px sold var(--azure-mist);
+  border-radius: 8px;
+}
