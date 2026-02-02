@@ -38,3 +38,8 @@ a:hover {
 a:active {
   color: #1f2345;
 }
+
+nav {
+  background-color: var(--azure-mist);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
