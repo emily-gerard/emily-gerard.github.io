@@ -8,4 +8,9 @@
 body {
   background-color: var(--periwinkle);
   color: var(--french-blue);
+  margin: 100px;
+}
+
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
