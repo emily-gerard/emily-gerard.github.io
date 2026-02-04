@@ -1,0 +1,45 @@
+:root {
+  --thistle: #cdb4dbff;
+  --pastel-petal: #ffc8ddff;
+  --baby-pink: #ffafccff;
+  --icy-blue: #bde0feff;
+  --sky-blue: #a2d2ffff;
+}
+
+body {
+  background-color: var(--icy-blue);
+  color: var(--baby-pink);
+  margin: 0 auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 500ch;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+h2,
+h3 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+a:link {
+  color: var(--pastel-petal);
+}
+
+a:visited {
+  color: rgb(227, 49, 117);
+}
+
+a:hover {
+  color: var(--baby-pink);
+}
+
+a:active {
+  color: var(--thistle);
+}
