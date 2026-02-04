@@ -43,3 +43,35 @@ a:hover {
 a:active {
   color: var(--thistle);
 }
+
+nav {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 12px 16px;
+  background-color: var(--sky-blue);
+  border-radius: 16px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  display: inline-block;
+  padding: 6px 13px;
+  background-color: var(--thistle);
+  border-radius: 12px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 12px 16px;
+  background-color: var(--sky-blue);
+  border-radius: 16px;
+}
