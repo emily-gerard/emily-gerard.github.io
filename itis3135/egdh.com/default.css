@@ -5,3 +5,9 @@
   --lavender-purple: #9d4eddff;
   --mauve: #e0aaffff;
 }
+
+body {
+  background-color: var(--mauve);
+  color: var(--dark-amethyst-2);
+  margin: 0 auto;
+}
