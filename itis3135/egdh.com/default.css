@@ -6,6 +6,12 @@
   --mauve: #e0aaffff;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
 body {
   background-color: var(--mauve);
   color: var(--dark-amethyst-2);
