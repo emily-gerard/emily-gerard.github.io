@@ -20,7 +20,7 @@ body {
 }
 
 ul {
-  list-style-type: "✧";
+  list-style-type: circle;
 }
 
 nav ul {
