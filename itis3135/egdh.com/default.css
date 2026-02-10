@@ -5,6 +5,12 @@
   --lavender-purple: #9d4eddff;
   --mauve: #e0aaffff;
 }
+.orbitron-font > {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .header-container {
   background-color: white;
