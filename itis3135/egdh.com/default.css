@@ -18,3 +18,11 @@ body {
   color: var(--dark-amethyst-2);
   margin: 0 auto;
 }
+
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+}
