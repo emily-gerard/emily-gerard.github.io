@@ -19,6 +19,10 @@ body {
   margin: 0 auto;
 }
 
+ul {
+  list-style-type: "✧";
+}
+
 nav ul {
   list-style-type: none;
   margin: 0px;
