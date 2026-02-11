@@ -30,7 +30,10 @@ body {
 }
 
 hr {
-  color: var(--indigo-ink);
+  border: none;
+  height: 3px;
+  background-color: var(--indigo-ink);
+  margin: 20px 0;
 }
 
 h1,
