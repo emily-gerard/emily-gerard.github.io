@@ -29,6 +29,10 @@ body {
   margin: 10px;
 }
 
+hr {
+  color: var(--indigo-ink);
+}
+
 h1,
 h2,
 h3,
