@@ -22,16 +22,16 @@
         display: none;
       }
 
-      #home {
-        display: block;
-      }
-
-      section:target {
-        display: block;
-      }
-
-      section:target ~ #home {
+      main section {
         display: none;
+      }
+
+      main section:target {
+        display: block;
+      }
+
+      main section:first-of-type {
+        display: block;
       }
       h1 {
         text-align: center;
