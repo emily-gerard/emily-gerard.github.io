@@ -133,8 +133,28 @@
             could go down or you might want the performance boost.
           </li>
         </ul>
+        <h3>GPU Price Checker</h3>
+        <label for="gpu">Choose a GPU:</label>
+
+        <select id="gpu" onchange="updatePrice()">
+          <option value="300">RTX 4060</option>
+          <option value="550">RTX 4070</option>
+          <option value="700">RX 7900 XT</option>
+          <option value="550">RTX 5070</option>
+          <option value="1000">RTX 5080</option>
+          <option value="2000">RTX 5090</option>
+          <option value="800">RX 9070 XT</option>
+
+          <p>Estimated Price: $<span id="price">300</span></p>
+        </select>
       </section>
     </main>
     <footer></footer>
+    <script>
+      function updatePrice() {
+        let price = document.getElementById("gpu").value;
+        document.getElementById("price").textContent = price;
+      }
+    </script>
   </body>
 </html>
