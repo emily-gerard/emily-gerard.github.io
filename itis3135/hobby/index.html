@@ -33,6 +33,9 @@
       main section:first-of-type {
         display: block;
       }
+      main:has(section:target) section:first-of-type {
+        display: none;
+      }
       h1 {
         text-align: center;
       }
