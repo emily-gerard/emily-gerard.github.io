@@ -92,7 +92,7 @@
         padding: 6px 10px;
         border-radius: 6px;
       }
-      #loc_h {
+      .loc_h {
         text-align: center;
       }
       img {
@@ -101,6 +101,13 @@
       }
       figure {
         text-align: center;
+      }
+
+      .image-row {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
       }
     </style>
   </head>
@@ -225,7 +232,7 @@
           computers is the best place for.
         </p>
 
-        <h3 id="loc_h">Does your location fit the requirements?</h3>
+        <h3 class="loc_h">Does your location fit the requirements?</h3>
         <div class="checklist">
           <div>
             <input type="checkbox" id="parts" />
@@ -331,25 +338,27 @@
           performance and built my first computer. My hobby and passion went up
           from there.
         </p>
-        <figure>
-          <img
-            src="images/old_puter.jpg"
-            alt="Gaming laptop"
-            width="300"
-            height="400"
-          />
+        <div class="img_row">
+          <figure>
+            <img
+              src="images/old_puter.jpg"
+              alt="Gaming laptop"
+              width="300"
+              height="400"
+            />
 
-          <figcaption>My original gaming laptop.</figcaption>
-        </figure>
-        <figure>
-          <img
-            src="images/new_puter.jpg"
-            alt="Current Setup"
-            width="300"
-            height="400"
-          />
-          <figcaption>My current setup/ My pride and joy.</figcaption>
-        </figure>
+            <figcaption>My original gaming laptop.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="images/new_puter.jpg"
+              alt="Current Setup"
+              width="300"
+              height="400"
+            />
+            <figcaption>My current setup/ My pride and joy.</figcaption>
+          </figure>
+        </div>
       </section>
       <section id="prompts">
         <h2>AI Prompts</h2>
