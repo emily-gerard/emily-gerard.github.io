@@ -22,11 +22,7 @@
         display: none;
       }
 
-      main section:target {
-        display: block;
-      }
-
-      main:not(:has(section:target)) #home {
+      main section.active {
         display: block;
       }
       h1 {
@@ -283,6 +279,22 @@
         let price = document.getElementById("gpu").value;
         document.getElementById("price").textContent = price;
       }
+      function showSection() {
+        const sections = document.querySelectorAll("main section");
+        const hash = window.location.hash || "#home";
+
+        sections.forEach((section) => {
+          section.classList.remove("active");
+        });
+
+        const currentSection = document.querySelector(hash);
+        if (currentSection) {
+          currentSection.classList.add("active");
+        }
+      }
+
+      window.addEventListener("hashchange", showSection);
+      window.addEventListener("load", showSection);
     </script>
   </body>
 </html>
