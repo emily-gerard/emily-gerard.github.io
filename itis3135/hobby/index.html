@@ -70,6 +70,13 @@
       h2 {
         text-align: center;
       }
+      #loc {
+        background-color: var(--prussian-blue);
+        align-content: center;
+      }
+      #loc_h {
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -193,8 +200,8 @@
           computers is the best place for.
         </p>
 
-        <h3>Does your location fit the requirements?</h3>
-        <div>
+        <h3 id="loc_h">Does your location fit the requirements?</h3>
+        <div id="loc">
           <input type="checkbox" id="parts" />
           <label for="parts">All necessary parts</label><br />
           <input type="checkbox" id="compatibility" />
