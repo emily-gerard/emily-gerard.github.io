@@ -18,19 +18,15 @@
         justify-content: center;
         display: flex;
       }
-      section {
+      main section {
         display: none;
       }
 
-      section {
-        display: none;
-      }
-
-      section:target {
+      main section:target {
         display: block;
       }
 
-      #home {
+      main:not(:has(section:target)) #home {
         display: block;
       }
       h1 {
@@ -50,6 +46,7 @@
         <li><a href="#where">Where I can Build</a></li>
         <li><a href="#how">How to Build</a></li>
         <li><a href="#why">Why I do This</a></li>
+        <li><a href="#prompts">AI Prompts</a></li>
       </ul>
     </nav>
     <main>
@@ -271,6 +268,13 @@
           />
           <figcaption>My current setup/ My pride and joy.</figcaption>
         </figure>
+      </section>
+      <section id="prompts">
+        <h2>AI Prompts</h2>
+        <ul>
+          <li>How do I make a PC part price checker?</li>
+          <li>How to</li>
+        </ul>
       </section>
     </main>
     <footer></footer>
