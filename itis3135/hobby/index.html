@@ -39,6 +39,9 @@
         display: flex;
         padding: 6px 13px;
       }
+      nav li:not(:last-child)::after {
+        content: " ✧ ";
+      }
       nav a {
         display: inline-block;
       }
