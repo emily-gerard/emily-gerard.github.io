@@ -21,15 +21,15 @@
       <form>
         <p>
           <label for="f_name">First Name: </label>
-          <input type="text" id="f_name" name="f_name" value="Emily" required />
+          <input type="text" id="f_name" name="f_name" value="Emily" placeholder="Enter first name" required />
         </p>
         <p>
           <label for="m_name">Middle Name: </label>
-          <input type="text" id="m_name" name="m_name" value="Elizabeth" />
+          <input type="text" id="m_name" name="m_name" value="Elizabeth" placeholder="Enter middle name(optional)"/>
         </p>
         <p>
           <label for="n_name">Nickname: </label>
-          <input type="text" id="n_name" name="n_name" />
+          <input type="text" id="n_name" name="n_name" placeholder="Enter nickname/preferred name(optional)"/>
         </p>
         <p>
           <label for="l_name">Last Name: </label>
@@ -38,6 +38,7 @@
             id="l_name"
             name="l_name"
             value="Gerard"
+            placeholder="Enter last name"
             required
           />
         </p>
@@ -48,6 +49,7 @@
             id="acknowledgement"
             name="acknowledgement"
             value="I understand that what is on this page is not password protected..."
+            placeholder="Enter acknowledgement statement"
             required
           />
         </p>
@@ -68,6 +70,7 @@
             id="mascot_adj"
             name="mascot_adj"
             value="Eclectic"
+            placeholder="Enter adjective matching first initial"
             required
           />
         </p>
@@ -78,12 +81,15 @@
             id="mascot_ani"
             name="mascot_ani"
             value="Goldfish"
+            placeholder="Enter animal matching last initial"
             required
           />
         </p>
         <p>
           <label for="divider">Divider: </label>
-          <input type="text" id="divider" name="divider" value="|" required />
+          <input type="text" id="divider" name="divider" value="|" 
+          placeholder="Enter a divider"
+          required />
         </p>
         <p>
           <label for="picture">Picture: </label>
@@ -97,6 +103,7 @@
             id="caption"
             name="caption"
             value="Made a lizard friend."
+            placeholder="Enter picture caption"
             required
           />
         </p>
@@ -107,6 +114,7 @@
             id="p_statement"
             name="p_statement"
             value="I’m a sophomore at UNC Charlotte studying computer science..."
+            placeholder="Enter a personal statement"
             required
           />
         </p>
@@ -117,6 +125,7 @@
             id="per_background"
             name="per_background"
             value="I spend most of my free time on my computer..."
+            placeholder="Enter personal background"
             required
           />
         </p>
@@ -127,6 +136,7 @@
             id="prof_background"
             name="prof_background"
             value="I’ve worked in customer service since I was 16..."
+            placeholder="Enter professional background"
             required
           />
         </p>
@@ -137,6 +147,7 @@
             id="a_background"
             name="a_background"
             value="I’m currently a sophomore at UNC Charlotte..."
+            placeholder="Enter academic background"
             required
           />
         </p>
@@ -147,6 +158,7 @@
             id="sub_background"
             name="sub_background"
             value=" I’ve taken a class in high school covering surface level web development..."
+            placeholder="Enter subject background"
             required
           />
         </p>
@@ -157,6 +169,7 @@
             id="prim_comp"
             name="prim_comp"
             value="I mainly use my Macbook Pro laptop..."
+            placeholder="Enter primary computer"
             required
           />
         </p>
@@ -167,6 +180,7 @@
             id="backup"
             name="backup"
             value=" have my personal custom desktop computer..."
+            placeholder="Enter backup computer"
             required
           />
         </p>
@@ -178,12 +192,14 @@
             id="c1_dep"
             name="c1_dep"
             value="ITIS"
+            placeholder="e.g. ITIS"
             required
           />
           <label for="c1_num">Course Number: </label>
-          <input type="number" id="c1_num" name="c1_num" value="3135" required/>
+          <input type="number" id="c1_num" name="c1_num" value="3135" placeholder="e.g. 3135"
+          required/>
           <label for="c1_name">Course Name: </label>
-          <input type="text" id="c1_name" name="c1_name" value="Front End Web Development" required/>
+          <input type="text" id="c1_name" name="c1_name" value="Front End Web Development" placeholder="e.g. Front End Web Development" required/>
           <label for="c1_reason">Course Reason: </label>
           <input type="text" id="c1_reason" name="c1_reason" value="Required course." required/>
         </p>
@@ -195,12 +211,13 @@
           id="c2_dep"
           name="c2_dep"
           value="MATH"
+          placeholder="e.g. ITIS"
           required
         />
         <label for="c2_num">Course Number: </label>
-        <input type="number" id="c2_num" name="c2_num" value="1241" required/>
+        <input type="number" id="c2_num" name="c2_num" value="1241" placeholder="e.g. 3135" required/>
         <label for="c2_name">Course Name: </label>
-        <input type="text" id="c2_name" name="c2_name" value="Calculus 1" required/>
+        <input type="text" id="c2_name" name="c2_name" value="Calculus 1" placeholder="e.g. Front End Web Development" required/>
         <label for="c2_reason">Course Reason: </label>
         <input type="text" id="c2_reason" name="c2_reason" value="Required course." required/>
         </p>
@@ -212,12 +229,13 @@
           id="c3_dep"
           name="c3_dep"
           value="CTCM"
+          placeholder="e.g. ITIS"
           required
         />
         <label for="c3_num">Course Number: </label>
-        <input type="number" id="c3_num" name="c3_num" value="2530" required/>
+        <input type="number" id="c3_num" name="c3_num" value="2530" placeholder="e.g. 3135" required/>
         <label for="c3_name">Course Name: </label>
-        <input type="text" id="c3_name" name="c3_name" value="Critical Thinking" required/>
+        <input type="text" id="c3_name" name="c3_name" value="Critical Thinking" placeholder="e.g. Front End Web Development" required/>
         <label for="c3_reason">Course Reason: </label>
         <input type="text" id="c3_reason" name="c3_reason" value="Required course." required/>
         </p>
@@ -229,12 +247,14 @@
           id="c4_dep"
           name="c4_dep"
           value="ITSC"
+          placeholder="e.g. ITIS"
           required
         />
         <label for="c4_num">Course Number: </label>
-        <input type="number" id="c4_num" name="c4_num" value="2181" required/>
+        <input type="number" id="c4_num" name="c4_num" value="2181" placeholder="e.g. 3135"
+        required/>
         <label for="c4_name">Course Name: </label>
-        <input type="text" id="c4_name" name="c4_name" value="Intro to Computer Systems" required/>
+        <input type="text" id="c4_name" name="c4_name" value="Intro to Computer Systems" placeholder="e.g. Front End Web Development" required/>
         <label for="c4_reason">Course Reason: </label>
         <input type="text" id="c4_reason" name="c4_reason" value="Required course." required/>
         </p>
@@ -246,12 +266,15 @@
           id="c5_dep"
           name="c5_dep"
           value="ANTH"
+          placeholder="e.g. ITIS"
           required
         />
         <label for="c5_num">Course Number: </label>
-        <input type="number" id="c5_num" name="c5_num" value="2141" required/>
+        <input type="number" id="c5_num" name="c5_num" value="2141" 
+        placeholder="e.g. 3135"
+        required/>
         <label for="c5_name">Course Name: </label>
-        <input type="text" id="c5_name" name="c5_name" value="Biological Anthropology" required/>
+        <input type="text" id="c5_name" name="c5_name" value="Biological Anthropology" placeholder="e.g. Front End Web Development" required/>
         <label for="c5_reason">Course Reason: </label>
         <input type="text" id="c5_reason" name="c5_reason" value="Required course." required/>
         </p>
@@ -263,12 +286,14 @@
           type="text"
           id="c6_dep"
           name="c6_dep"
+          placeholder="e.g. ITIS"
           value="ANTH"
         />
         <label for="c6_num">Course Number: </label>
-        <input type="number" id="c6_num" name="c6_num" value="2141" />
+        <input type="number" id="c6_num" name="c6_num" value="2141"
+        placeholder="e.g. 3135" />
         <label for="c6_name">Course Name: </label>
-        <input type="text" id="c6_name" name="c6_name" value="Biological Anthropology Lab" />
+        <input type="text" id="c6_name" name="c6_name" value="Biological Anthropology Lab" placeholder="e.g. Front End Web Development" />
         <label for="c6_reason">Course Reason: </label>
         <input type="text" id="c6_reason" name="c6_reason" value="Required course." />
         </p>
