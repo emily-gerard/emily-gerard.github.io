@@ -529,10 +529,22 @@
             required
           />
         </p>
+        <p>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+          <button type="button">Clear</button>
+        </p>
       </form>
     </main>
 
     <div data-include="components/footer.html"></div>
     <script src="scripts/include.js"></script>
+    <script>
+      const clearButton = document.querySelector("button[type='button']");
+      const inputElements = Array.from(document.querySelectorAll("form input"));
+      clearButton.addEventListener("click", function () {
+        inputs.forEach((input) => (input.value = ""));
+      });
+    </script>
   </body>
 </html>
