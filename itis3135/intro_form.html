@@ -537,7 +537,7 @@
         <p>
           <button type="submit">Submit</button>
           <button type="reset">Reset</button>
-          <button type="button">Clear</button>
+          <button type="button" id="clear-btn">Clear</button>
         </p>
       </form>
     </main>
@@ -545,7 +545,7 @@
     <div data-include="components/footer.html"></div>
     <script src="scripts/include.js"></script>
     <script>
-      const clearButton = document.querySelector("button[type='button']");
+      const clearButton = document.getElementById("clear-btn");
 
       clearButton.addEventListener("click", () => {
         document.querySelectorAll("#form input").forEach((input) => {
