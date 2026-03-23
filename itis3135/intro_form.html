@@ -540,6 +540,16 @@
     <div data-include="components/footer.html"></div>
     <script src="scripts/include.js"></script>
     <script>
+      cdocument
+        .querySelector("button[type='button']")
+        .addEventListener("click", function (event) {
+          Array.from(document.querySelectorAll("form input")).forEach(
+            (input) => {
+              input.value = "";
+            }
+          );
+        });
+
       const clearButton = document.querySelector("button[type='button']");
       const inputElements = Array.from(document.querySelectorAll("form input"));
       clearButton.addEventListener("click", function () {
