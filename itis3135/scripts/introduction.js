@@ -6,7 +6,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let extraCourseCount = 0;
 
-  function validateForm() {
+  const getValue = (id) => {
+    const element = document.getElementById(id);
+    return element ? element.value.trim() : "";
+  };
+
+  const resetDynamicCourses = () => {
+    const dynamicCourses = coursesContainer.querySelectorAll(".dynamic-course");
+    dynamicCourses.forEach((course) => course.remove());
+    extraCourseCount = 0;
+  };
+
+  const resetFormProgress = () => {
+    formElement.reset();
+    resetDynamicCourses();
+  };
+
+  const validateForm = () => {
     const requiredFields = formElement.querySelectorAll("[required]");
 
     for (const field of requiredFields) {
@@ -22,21 +38,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     return true;
-  }
+  };
 
-  function resetFormProgress() {
-    formElement.reset();
-    resetDynamicCourses();
-  }
-
-  function resetDynamicCourses() {
-    const dynamicCourses = coursesContainer.querySelectorAll(".dynamic-course");
-    dynamicCourses.forEach((course) => course.remove());
-    extraCourseCount = 0;
-  }
-
-  function addCourseFields() {
-    extraCourseCount++;
+  const addCourseFields = () => {
+    extraCourseCount += 1;
 
     const courseWrapper = document.createElement("div");
     courseWrapper.className = "dynamic-course";
@@ -67,17 +72,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     coursesContainer.appendChild(courseWrapper);
-  }
+  };
 
-  function getValue(id) {
-    const element = document.getElementById(id);
-    return element ? element.value.trim() : "";
-  }
-
-  function collectCourses() {
+  const collectCourses = () => {
     const courses = [];
 
-    for (let i = 1; i <= 6; i++) {
+    for (let i = 1; i <= 6; i += 1) {
       const dep = getValue(`c${i}_dep`);
       const num = getValue(`c${i}_num`);
       const name = getValue(`c${i}_name`);
@@ -92,7 +92,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     dynamicCourses.forEach((course) => {
       const num = course.dataset.courseNumber;
-
       const dep = getValue(`extra_dep_${num}`);
       const courseNum = getValue(`extra_num_${num}`);
       const name = getValue(`extra_name_${num}`);
@@ -109,9 +108,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     return courses;
-  }
+  };
 
-  function showIntroductionPage() {
+  const showIntroductionPage = () => {
     const courses = collectCourses();
 
     let coursesHTML = "";
@@ -157,7 +156,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <p><strong>Backup Computer:</strong> ${getValue("backup")}</p>
   
         <h3>Courses</h3>
-        <ul>${coursesHTML}</ul>
+        <ul>
+          ${coursesHTML}
+        </ul>
   
         <p><strong>Quote:</strong> "${getValue("quote")}" — ${getValue(
       "author"
@@ -183,9 +184,9 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       location.reload();
     });
-  }
+  };
 
-  formElement.addEventListener("submit", (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     if (!validateForm()) {
@@ -194,14 +195,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     showIntroductionPage();
-  });
+  };
 
-  formElement.addEventListener("reset", () => {
+  const handleReset = () => {
     setTimeout(() => {
       resetDynamicCourses();
     }, 0);
-  });
+  };
 
+  formElement.addEventListener("submit", handleSubmit);
+  formElement.addEventListener("reset", handleReset);
   addCourseBtn.addEventListener("click", addCourseFields);
 
   window.resetFormProgress = resetFormProgress;
