@@ -6,25 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let extraCourseCount = 0;
 
-  formElement.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    if (!validateForm()) {
-      alert("Please complete all required fields before submitting.");
-      return;
-    }
-
-    showIntroductionPage();
-  });
-
-  formElement.addEventListener("reset", () => {
-    setTimeout(() => {
-      resetDynamicCourses();
-    }, 0);
-  });
-
-  addCourseBtn.addEventListener("click", addCourseFields);
-
   function validateForm() {
     const requiredFields = formElement.querySelectorAll("[required]");
 
@@ -103,12 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const reason = getValue(`c${i}_reason`);
 
       if (dep || num || name || reason) {
-        courses.push({
-          dep,
-          num,
-          name,
-          reason,
-        });
+        courses.push({ dep, num, name, reason });
       }
     }
 
@@ -181,9 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <p><strong>Backup Computer:</strong> ${getValue("backup")}</p>
   
         <h3>Courses</h3>
-        <ul>
-          ${coursesHTML}
-        </ul>
+        <ul>${coursesHTML}</ul>
   
         <p><strong>Quote:</strong> "${getValue("quote")}" — ${getValue(
       "author"
@@ -202,9 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <li><a href="${getValue("fcc")}" target="_blank">FreeCodeCamp</a></li>
         </ul>
   
-        <p>
-          <a href="#" id="reset-link">Reset and do it again</a>
-        </p>
+        <p><a href="#" id="reset-link">Reset and do it again</a></p>
       `;
 
     document.getElementById("reset-link").addEventListener("click", (e) => {
@@ -212,6 +184,25 @@ document.addEventListener("DOMContentLoaded", () => {
       location.reload();
     });
   }
+
+  formElement.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    if (!validateForm()) {
+      alert("Please complete all required fields before submitting.");
+      return;
+    }
+
+    showIntroductionPage();
+  });
+
+  formElement.addEventListener("reset", () => {
+    setTimeout(() => {
+      resetDynamicCourses();
+    }, 0);
+  });
+
+  addCourseBtn.addEventListener("click", addCourseFields);
 
   window.resetFormProgress = resetFormProgress;
 });
