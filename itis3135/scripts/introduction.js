@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
           field.focus();
           return false;
         }
-      } else if (field.value.trim() === "") {
+      } else if (!field.value || field.value.trim() === "") {
         field.focus();
         return false;
       }
