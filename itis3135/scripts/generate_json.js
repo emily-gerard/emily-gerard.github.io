@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const formElement = document.getElementById("form");
   const mainElement = document.getElementById("main-content");
   const generateJsonBtn = document.getElementById("generate-json-btn");
 
-  if (!formElement || !mainElement || !generateJsonBtn) {
+  if (!mainElement || !generateJsonBtn) {
     return;
   }
 
@@ -25,8 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
         courses.push({
           department: dep,
           number: num,
-          name,
-          reason,
+          courseName: name,
+          reason: reason,
         });
       }
     }
@@ -44,8 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
         courses.push({
           department: dep,
           number: courseNum,
-          name,
-          reason,
+          courseName: name,
+          reason: reason,
         });
       }
     });
@@ -53,8 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
     return courses;
   };
 
-  const buildIntroductionJson = () => {
-    return {
+  const showGeneratedJson = () => {
+    const jsonObject = {
       firstName: getValue("f_name"),
       middleName: getValue("m_name"),
       nickname: getValue("n_name"),
@@ -64,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
       mascotAdjective: getValue("mascot_adj"),
       mascotAnimal: getValue("mascot_ani"),
       divider: getValue("divider"),
-      pictureCaption: getValue("caption"),
+      caption: getValue("caption"),
       personalStatement: getValue("p_statement"),
       personalBackground: getValue("per_background"),
       professionalBackground: getValue("prof_background"),
@@ -85,16 +84,12 @@ document.addEventListener("DOMContentLoaded", () => {
         freeCodeCamp: getValue("fcc"),
       },
     };
-  };
 
-  const showGeneratedJson = () => {
-    const jsonObject = buildIntroductionJson();
     const jsonText = JSON.stringify(jsonObject, null, 2);
 
     mainElement.innerHTML = `
         <h2>Introduction HTML</h2>
         <section>
-          <p>Copy the JSON below:</p>
           <pre><code class="language-json">${jsonText}</code></pre>
           <p><a href="#" id="reset-link">Reset and do it again</a></p>
         </section>
@@ -113,7 +108,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  generateJsonBtn.addEventListener("click", () => {
+  generateJsonBtn.addEventListener("click", (e) => {
+    e.preventDefault();
     showGeneratedJson();
   });
 });
