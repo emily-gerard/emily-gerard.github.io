@@ -80,3 +80,9 @@ footer {
   background-color: var(--azure-mist);
   border-radius: 12px;
 }
+.proj_img {
+  align-content: center;
+}
+.proj_ol {
+  align-content: center;
+}
