@@ -81,8 +81,12 @@ footer {
   border-radius: 12px;
 }
 .proj_img {
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .proj_ol {
-  align-content: center;
+  text-align: center;
+  list-style-position: inside;
 }
