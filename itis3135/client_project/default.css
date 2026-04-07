@@ -20,6 +20,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  background-color: var(--cerulean);
 }
 
 h1 {
@@ -34,7 +35,7 @@ a:link {
   color: var(--brown-red);
 }
 a:visited {
-  color: var(--tea-green);
+  color: white;
 }
 a:hover {
   color: var(--cinnabar);
