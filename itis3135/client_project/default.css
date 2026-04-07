@@ -8,8 +8,8 @@
 }
 
 body {
-  background-color: var(--coffee-bean);
+  background-color: black;
   color: var(--tea-green);
-  margin: 0 auto;
+  margin: 0;
   font-family: "Inter", sans-serif;
 }
