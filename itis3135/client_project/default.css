@@ -39,3 +39,15 @@ nav {
   background-color: var(--cerulean);
   top: 0;
 }
+nav a {
+  display: inline-block;
+  padding: 6px 13px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+}
