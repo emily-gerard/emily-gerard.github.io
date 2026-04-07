@@ -1,0 +1,13 @@
+@import url("https://googleapis.com");
+:root {
+  --tea-green: #c4d6b0ff;
+  --cerulean: #477998ff;
+  --coffee-bean: #291f1eff;
+  --cinnabar: #f64740ff;
+  --brown-red: #a3333dff;
+}
+body {
+  background-color: var(--coffee-bean);
+  color: var(--tea-green);
+  margin: 0 auto;
+}
