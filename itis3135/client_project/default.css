@@ -21,6 +21,9 @@ h1 {
   font-family: "Saira Stencil", sans-serif;
   color: var(--cinnabar);
 }
+a {
+  text-decoration: none;
+}
 
 a:link {
   color: var(--brown-red);
