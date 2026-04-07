@@ -1,4 +1,4 @@
-@import url("https://googleapis.com");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --tea-green: #c4d6b0ff;
   --cerulean: #477998ff;
@@ -6,8 +6,10 @@
   --cinnabar: #f64740ff;
   --brown-red: #a3333dff;
 }
+
 body {
   background-color: var(--coffee-bean);
   color: var(--tea-green);
   margin: 0 auto;
+  font-family: "Inter", sans-serif;
 }
