@@ -33,5 +33,7 @@ a:active {
   color: var(--cinnabar);
 }
 nav {
+  font-family: "Inter", sans-serif;
   background-color: var(--cerulean);
+  top: 0;
 }
