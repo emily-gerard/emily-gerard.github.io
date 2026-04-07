@@ -28,6 +28,9 @@ h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
 a:link {
   color: var(--french-blue);
 }
