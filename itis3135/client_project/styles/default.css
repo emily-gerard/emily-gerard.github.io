@@ -21,7 +21,7 @@ body {
   align-items: center;
   padding: 10px 20px;
   background-color: var(--cerulean);
-  width: max-content;
+  width: 100%;
 }
 
 h1 {

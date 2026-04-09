@@ -22,6 +22,27 @@
   cursor: pointer;
 }
 
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
 body {
   background-color: black;
   color: white;
@@ -36,7 +57,7 @@ body {
   align-items: center;
   padding: 10px 20px;
   background-color: var(--cerulean);
-  width: max-content;
+  width: 100%;
 }
 
 h1 {
