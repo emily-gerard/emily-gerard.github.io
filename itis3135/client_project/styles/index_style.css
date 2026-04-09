@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --tea-green: #c4d6b0ff;
+  --cerulean: #477998ff;
+  --coffee-bean: #291f1eff;
+  --cinnabar: #f64740ff;
+  --brown-red: #a3333dff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+}
+.slides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--cerulean);
+  width: max-content;
+}
+
+h1 {
+  font-family: "Saira Stencil", sans-serif;
+  color: var(--cinnabar);
+}
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: var(--brown-red);
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: var(--cinnabar);
+}
+a:active {
+  color: var(--cinnabar);
+}
+
+nav {
+  font-family: "Inter", sans-serif;
+  top: 0;
+}
+nav a {
+  display: inline-block;
+  padding: 6px 13px;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+}
