@@ -153,20 +153,3 @@ button {
 button:hover {
   background-color: var(--brown-red);
 }
-
-@media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  nav a {
-    padding: 10px 0;
-  }
-}
