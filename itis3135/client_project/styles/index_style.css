@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
   --tea-green: #c4d6b0ff;
   --cerulean: #477998ff;
@@ -13,11 +14,82 @@
   box-sizing: border-box;
 }
 
+/* Page styling */
+body {
+  background-color: var(--coffee-bean);
+  color: white;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cerulean);
+  width: 100%;
+  padding: 15px 20px;
+}
+
+h1 {
+  font-family: "Saira Stencil", sans-serif;
+  color: var(--cinnabar);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: var(--tea-green);
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover,
+a:active {
+  color: var(--cinnabar);
+}
+
+nav {
+  font-family: "Inter", sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 6px 13px;
+  font-size: 20px;
+}
+
+/* Slideshow styling */
 .container {
   position: relative;
+  max-width: 900px;
+  margin: 20px auto;
 }
+
 .slides {
   display: none;
+}
+
+.slides img {
+  width: 100%;
+  display: block;
 }
 
 .cursor {
@@ -55,7 +127,7 @@
 .caption-container {
   text-align: center;
   background-color: #222;
-  padding: 2px 16px;
+  padding: 10px 16px;
   color: white;
 }
 
@@ -72,64 +144,10 @@
 
 .demo {
   opacity: 0.6;
+  width: 100%;
 }
 
 .active,
 .demo:hover {
   opacity: 1;
-}
-
-body {
-  background-color: black;
-  color: white;
-  margin: 0;
-  font-family: "Inter", sans-serif;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--cerulean);
-  width: 100%;
-}
-
-h1 {
-  font-family: "Saira Stencil", sans-serif;
-  color: var(--cinnabar);
-}
-a {
-  text-decoration: none;
-}
-
-a:link {
-  color: var(--brown-red);
-}
-a:visited {
-  color: white;
-}
-a:hover {
-  color: var(--cinnabar);
-}
-a:active {
-  color: var(--cinnabar);
-}
-
-nav {
-  font-family: "Inter", sans-serif;
-  top: 0;
-}
-nav a {
-  display: inline-block;
-  padding: 6px 13px;
-  font-size: 20px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-  display: flex;
-  justify-content: center;
 }
