@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <header class="header-container">
       <h1>CC Prints</h1>
@@ -23,52 +24,87 @@
         </ul>
       </nav>
     </header>
+
     <main>
-      <h2>Contact Me:</h2>
-      <p>My Name: Christopher Carey</p>
-      <p>Email:</p>
-      <a href="mailto:ccarey12@charlotte.edu">ccarey12@charlotte.edu </a>
+      <h2>Contact</h2>
+      <p>My name is Christopher Carey.</p>
+      <p>
+        Email:
+        <a href="mailto:ccarey12@charlotte.edu">ccarey12@charlotte.edu</a>
+      </p>
+
       <hr />
-      <div class="faq-container">
-        <h3>FAQ:</h3>
+
+      <section class="faq-container">
+        <h3>Frequently Asked Questions</h3>
         <ul>
-          <li>What is 3D printing?</li>
-          <ul>
-            <li>
-              3D printers use digital models to fabricate three-dimensional
-              objects one layer at a time
-            </li>
-          </ul>
-          <li>How long do builds take?</li>
-          <ul>
-            <li>
-              Builds can take a varied amount of time depending on size, printer
-              speed, and detail.
-            </li>
-          </ul>
-          <li>What materials do you use?</li>
-          <ul>
-            <li>
-              Check out the <a href="materials.html">Materials</a> section to
-              see what materials I use!
-            </li>
-          </ul>
-          <li></li>
+          <li>
+            <strong>What is 3D printing?</strong>
+            <ul>
+              <li>
+                3D printing is a process that uses digital models to create
+                three-dimensional objects one layer at a time.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>How long do builds take?</strong>
+            <ul>
+              <li>
+                Build times vary depending on the size, level of detail, and
+                printer speed.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>What materials do you use?</strong>
+            <ul>
+              <li>
+                Visit the <a href="materials.html">Materials and Tools</a> page
+                to learn more about the materials I use.
+              </li>
+            </ul>
+          </li>
         </ul>
-      </div>
+      </section>
+
       <hr />
-      <h3>Request Form:</h3>
-      <form action="https://formsubmit.co/ccarey12@charlotte.edu" method="POST">
-        <label for="first">First Name: </label>
-        <input type="text" id="first" name="first" required />
-        <label for="last">Last Name: </label>
-        <input type="text" id="last" name="last" required />
-        <br /><br />
-        <label for="email">Email Address: </label>
-        <input type="email" id="email" name="email" required /><br /><br />
-        <label for="request">Build Request: </label><br />
-        <textarea id="request" name="request" rows="4" required></textarea>
-      </form>
+
+      <section>
+        <h3>Request Form</h3>
+        <form
+          action="https://formsubmit.co/ccarey12@charlotte.edu"
+          method="POST"
+        >
+          <label for="first">First Name:</label>
+          <input type="text" id="first" name="first" required />
+
+          <label for="last">Last Name:</label>
+          <input type="text" id="last" name="last" required />
+
+          <br /><br />
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+
+          <br /><br />
+
+          <label for="request">Build Request:</label><br />
+          <textarea
+            id="request"
+            name="request"
+            rows="4"
+            cols="50"
+            required
+          ></textarea>
+
+          <br /><br />
+
+          <button type="submit">Send Request</button>
+        </form>
+      </section>
     </main>
   </body>
 </html>
