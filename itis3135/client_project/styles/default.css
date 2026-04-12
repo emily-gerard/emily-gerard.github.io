@@ -6,7 +6,6 @@
   --coffee-bean: #291f1e;
   --cinnabar: #f64740;
   --brown-red: #a3333d;
-  --white: #ffffff;
 }
 
 * {
@@ -17,12 +16,12 @@
 
 body {
   background-color: black;
-  color: var(--white);
+  color: white;
   font-family: "Inter", sans-serif;
   line-height: 1.6;
 }
 
-header.header-container {
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
