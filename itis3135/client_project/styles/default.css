@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+main {
+  background: linear-gradient(145deg, var(--coffee-bean), #1e1615);
+}
+
 body {
   background-color: black;
   color: white;
