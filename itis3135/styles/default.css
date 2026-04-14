@@ -96,7 +96,7 @@ nav ul {
 
 nav a {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 8px 15px;
   font-size: 15.2px;
   background-color: var(--white);
   color: var(--french-blue);
