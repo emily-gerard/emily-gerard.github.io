@@ -1,9 +1,10 @@
 :root {
-  --thistle: #cdb4dbff;
-  --pastel-petal: #ffc8ddff;
-  --baby-pink: rgb(248, 94, 150);
-  --icy-blue: rgb(128, 192, 249);
-  --sky-blue: #a2d2ffff;
+  --thistle: #b08ac6; /* slightly darker */
+  --pastel-petal: #ff8fb1; /* stronger pink for links */
+  --baby-pink: #c2185b; /* MUCH darker for readable text */
+  --icy-blue: #80c0f9;
+  --sky-blue: #5aa9e6; /* darker header/nav */
+  --text-dark: #1a1a1a; /* fallback readable text */
 }
 
 * {
@@ -14,7 +15,7 @@
 
 body {
   background-color: var(--icy-blue);
-  color: var(--baby-pink);
+  color: var(--text-dark); /* 👈 changed from pink */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -28,6 +29,7 @@ header {
   background-color: var(--sky-blue);
   padding: 20px;
   text-align: center;
+  color: white; /* 👈 ensures readability */
 }
 
 h1 {
@@ -39,6 +41,7 @@ h3 {
   font-family: "Courier New", Courier, monospace;
   text-align: center;
   margin-top: 20px;
+  color: var(--baby-pink); /* 👈 use pink only for headings */
 }
 
 p {
@@ -46,13 +49,14 @@ p {
   line-height: 1.6;
 }
 
+/* LINKS */
 a:link {
   color: var(--pastel-petal);
-  text-decoration: none;
+  font-weight: bold;
 }
 
 a:visited {
-  color: rgb(227, 49, 117);
+  color: #a01346; /* darker visited */
 }
 
 a:hover {
@@ -79,9 +83,9 @@ nav ul {
 }
 
 nav a {
-  display: inline-block;
+  background-color: white; /* 👈 contrast fix */
+  color: var(--baby-pink); /* 👈 readable on white */
   padding: 6px 13px;
-  background-color: var(--thistle);
   border-radius: 16px;
 }
 
@@ -96,6 +100,7 @@ footer {
   text-align: center;
   padding: 12px 16px;
   background-color: var(--sky-blue);
+  color: white; /* 👈 readable */
   border-radius: 16px;
   margin: 20px;
 }
