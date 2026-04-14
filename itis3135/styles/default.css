@@ -5,13 +5,21 @@
   --pale-slate: #cacfd6ff;
   --azure-mist: #d6e5e3ff;
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: var(--periwinkle);
   color: var(--french-blue);
   margin: 0 auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   max-width: 900ch;
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px 30px;
 }
 
 p {
