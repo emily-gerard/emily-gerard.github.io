@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --tea-green: #c4d6b0;
+  --tea-green: #d6e6c5;
   --cerulean: #477998;
   --coffee-bean: #291f1e;
-  --cinnabar: #f64740;
-  --brown-red: #a3333d;
+  --cinnabar: #f25a52;
+  --brown-red: #8f2f37;
   --white: #ffffff;
+  --off-white: #f7f7f7;
 }
 
 * {
@@ -15,14 +16,9 @@
   box-sizing: border-box;
 }
 
-main {
-  background: linear-gradient(145deg, var(--coffee-bean), #1e1615);
-  border-radius: 12px;
-}
-
 body {
   background-color: var(--brown-red);
-  color: white;
+  color: var(--off-white);
   font-family: "Inter", sans-serif;
   line-height: 1.6;
 }
@@ -34,19 +30,21 @@ body {
   background-color: var(--cerulean);
   padding: 20px;
   width: 100%;
-  flex-wrap: wrap;
+  gap: 16px;
 }
 
 h1 {
   font-family: "Saira Stencil", sans-serif;
-  color: var(--cinnabar);
+  color: var(--white); /* fixed contrast */
   font-size: 2rem;
 }
 
 main {
   max-width: 900px;
   margin: 30px auto;
-  padding: 0 20px 30px;
+  padding: 25px 20px 30px;
+  background: linear-gradient(145deg, var(--coffee-bean), #1e1615);
+  border-radius: 12px;
 }
 
 h2 {
@@ -80,7 +78,7 @@ a:link {
 }
 
 a:visited {
-  color: #d8d8d8;
+  color: #eadcff;
 }
 
 a:hover,
@@ -88,11 +86,18 @@ a:active {
   color: var(--cinnabar);
 }
 
+/* NAV */
+nav {
+  overflow-x: auto;
+}
+
 nav ul {
   list-style: none;
   display: flex;
   gap: 10px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* keeps primary nav on one line */
+  justify-content: flex-end;
+  align-items: center;
 }
 
 nav a {
@@ -100,15 +105,22 @@ nav a {
   padding: 8px 14px;
   font-size: 1rem;
   color: var(--white);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 6px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
   background-color: var(--brown-red);
   color: var(--white);
+  border-color: var(--white);
 }
 
+/* FAQ */
 .faq-container ul {
   margin-left: 20px;
 }
@@ -121,17 +133,20 @@ nav a:hover {
   color: var(--tea-green);
 }
 
+/* FORM */
 form {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.08);
   padding: 20px;
   border-radius: 10px;
   max-width: 700px;
+  margin: 0 auto;
 }
 
 label {
   display: inline-block;
   margin-bottom: 8px;
   font-weight: 600;
+  color: var(--white);
 }
 
 input,
@@ -143,10 +158,19 @@ textarea {
   border-radius: 6px;
   font-family: "Inter", sans-serif;
   font-size: 1rem;
+  background-color: var(--white);
+  color: #111;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--tea-green);
+  outline-offset: 2px;
 }
 
 textarea {
   resize: vertical;
+  min-height: 120px;
 }
 
 button {
@@ -160,15 +184,20 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
+button:hover,
+button:focus {
   background-color: var(--brown-red);
 }
+
+/* FOOTER */
 footer {
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 20px;
   background-color: var(--cerulean);
+  color: var(--white);
   width: 100%;
+  margin-top: 30px;
 }
 
 /* Gallery / Slideshow Styles */
@@ -203,14 +232,14 @@ footer {
   color: var(--white);
   font-weight: bold;
   font-size: 20px;
-  border-radius: 0 3px 3px 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 4px;
   user-select: none;
   -webkit-user-select: none;
 }
 
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
 .prev:hover,
@@ -226,16 +255,16 @@ footer {
   border-radius: 0 0 10px 10px;
 }
 
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
+/* Thumbnails */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .column {
-  float: left;
-  width: 16.66%;
-  padding: 5px;
+  flex: 1 1 120px;
 }
 
 .column img {
@@ -245,7 +274,7 @@ footer {
 }
 
 .demo {
-  opacity: 0.6;
+  opacity: 0.65;
 }
 
 .active,
@@ -254,3 +283,44 @@ footer {
 }
 
 /* Responsive Design */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  main {
+    margin: 20px 12px;
+    padding: 20px 16px 25px;
+  }
+
+  .prev,
+  .next {
+    padding: 12px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    padding: 7px 10px;
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 1.45rem;
+  }
+
+  .column {
+    flex: 1 1 45%;
+  }
+}
