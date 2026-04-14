@@ -6,6 +6,10 @@
   --sky-blue: #a2d2ffff;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--icy-blue);
   color: var(--baby-pink);
@@ -16,9 +20,11 @@ body {
 
 p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  float: right;
 }
 header {
   background-color: var(--sky-blue);
+  width: 100%;
 }
 
 h1 {
@@ -70,6 +76,9 @@ nav ul {
   padding: 0px;
   display: flex;
   justify-content: center;
+}
+img {
+  float: left;
 }
 
 footer {
