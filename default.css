@@ -1,7 +1,7 @@
 :root {
   --thistle: #cdb4dbff;
   --pastel-petal: #ffc8ddff;
-  --baby-pink: #ffafccff;
+  --baby-pink: rgb(248, 94, 150);
   --icy-blue: rgb(128, 192, 249);
   --sky-blue: #a2d2ffff;
 }
@@ -16,6 +16,9 @@ body {
 
 p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+  background-color: var(--sky-blue);
 }
 
 h1 {
@@ -49,7 +52,6 @@ a:active {
 nav {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 12px 16px;
-  background-color: var(--sky-blue);
   border-radius: 16px;
   position: sticky;
   top: 0;
@@ -59,7 +61,7 @@ nav a {
   display: inline-block;
   padding: 6px 13px;
   background-color: var(--thistle);
-  border-radius: 12px;
+  border-radius: 16px;
 }
 
 nav ul {
