@@ -120,6 +120,10 @@ img {
   border-radius: 10px;
 }
 
+figure {
+  align-content: center;
+}
+
 footer {
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
