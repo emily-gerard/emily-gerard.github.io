@@ -91,7 +91,7 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 12px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 nav a {
