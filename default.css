@@ -18,6 +18,12 @@ body {
   max-width: 500ch;
 }
 
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px 30px;
+}
+
 p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   float: right;
