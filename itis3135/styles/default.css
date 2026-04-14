@@ -91,11 +91,13 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 12px;
+  flex-wrap: nowrap;
 }
 
 nav a {
   display: inline-block;
-  padding: 8px 15px;
+  padding: 6px 12px;
+  font-size: 15.2px;
   background-color: var(--white);
   color: var(--french-blue);
   border: 2px solid var(--periwinkle-2);
