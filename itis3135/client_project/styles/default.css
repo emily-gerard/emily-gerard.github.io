@@ -26,41 +26,36 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: var(--cerulean);
+  padding: 15px 20px;
   margin-bottom: 20px;
-  min-height: 80px;
-}
-
-.header-container > * {
-  margin: 10px 15px;
+  flex-wrap: wrap;
 }
 
 h1 {
   font-family: "Saira Stencil", sans-serif;
   color: var(--cinnabar);
   font-size: 2rem;
-
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 /* MAIN */
 main {
-  margin: 30px auto;
+  margin: 30px 20px;
+  padding: 20px;
   background: linear-gradient(145deg, var(--coffee-bean), #1e1615);
   border-radius: 12px;
-}
-
-main > * {
-  margin: 20px;
 }
 
 /* HEADINGS */
 h2 {
   text-align: center;
   color: var(--tea-green);
+  margin-bottom: 15px;
 }
 
 h3 {
   color: var(--tea-green);
+  margin-bottom: 15px;
 }
 
 /* TEXT */
@@ -108,16 +103,11 @@ nav ul {
 
 nav a {
   display: inline-block;
-  margin: 6px 4px;
+  padding: 8px 14px;
   color: var(--white);
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 6px;
   white-space: nowrap;
-}
-
-nav a span {
-  display: inline-block;
-  margin: 6px 10px;
 }
 
 nav a:hover {
@@ -127,33 +117,26 @@ nav a:hover {
 /* FORM */
 form {
   background-color: rgba(255, 255, 255, 0.08);
+  padding: 20px;
   border-radius: 10px;
-  margin: 20px auto;
-}
-
-form > * {
-  margin: 10px 15px;
+  margin-top: 20px;
 }
 
 label {
   display: block;
   font-weight: 600;
+  margin-bottom: 8px;
 }
 
 input,
 textarea {
-  width: 100%;
   border: 1px solid var(--cerulean);
   border-radius: 6px;
   font-family: "Inter", sans-serif;
+  padding: 10px;
+  margin-bottom: 18px;
   background-color: var(--white);
   color: #111;
-}
-
-input,
-textarea,
-button {
-  margin-top: 8px;
 }
 
 textarea {
@@ -165,6 +148,7 @@ button {
   background-color: var(--cinnabar);
   color: var(--white);
   border: none;
+  padding: 12px 20px;
   border-radius: 6px;
   cursor: pointer;
 }
@@ -178,17 +162,15 @@ footer {
   text-align: center;
   margin-top: 30px;
   background-color: var(--cerulean);
+  padding: 15px;
 }
 
-footer > * {
-  margin: 10px;
-}
-
-/* GALLERY FIX (no floats) */
+/* GALLERY */
 .row {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-top: 20px;
 }
 
 .column {
