@@ -23,78 +23,78 @@
         </ul>
       </nav>
     </header>
+
     <main>
       <h2>Home</h2>
+
       <h3>Who I am:</h3>
       <p>
         My name is Christopher Carey and I am an Engineering student at UNCC. I
-        have a passion for creating and inovating. Through my passion, I have
+        have a passion for creating and innovating. Through my passion, I have
         taken interest in 3D printing. I enjoy creating useful tools for making
         daily life easier, interactive objects, and anything else I may need.
       </p>
+
       <hr />
+
       <h3>Featured Projects:</h3>
+
       <div class="container">
         <div class="slides">
-          <img
-            src="images/pookie.jpeg"
-            alt="lighting print"
-            style="width: 100%"
-          />
+          <img src="images/pookie.jpeg" alt="Lighting print" />
         </div>
+
         <div class="slides">
-          <img
-            src="images/cords.jpeg"
-            alt="cord organizer"
-            style="width: 100%"
-          />
+          <img src="images/cords.jpeg" alt="Cord organizer" />
         </div>
+
         <div class="slides">
-          <img src="images/coin.jpeg" alt="coin sorter" style="width: 100%" />
+          <img src="images/coin.jpeg" alt="Coin sorter" />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
         </div>
       </div>
 
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-      <div class="caption-container">
-        <p id="caption"></p>
-      </div>
       <div class="row">
         <div class="column">
           <img
             class="demo cursor"
-            src="images/cords.jpeg"
-            style="width: 100%"
+            src="images/pookie.jpeg"
             onclick="currentSlide(1)"
-            alt="cord sorter"
+            alt="Lighting print"
           />
         </div>
+
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="images/cords.jpeg"
+            onclick="currentSlide(2)"
+            alt="Cord organizer"
+          />
+        </div>
+
         <div class="column">
           <img
             class="demo cursor"
             src="images/coin.jpeg"
-            style="width: 100%"
-            onclick="currentSlide(2)"
-            alt="coin sorter"
-          />
-        </div>
-        <div class="column">
-          <img
-            class="demo cursor"
-            src="images/pookie.jpeg"
-            style="width: 100%"
             onclick="currentSlide(3)"
-            alt="lighting picture"
+            alt="Coin sorter"
           />
         </div>
       </div>
+
       <p>
-        *More will be implemented, waiting on pictures and JS implementation.
+        *More will be implemented, waiting on pictures and JavaScript
+        implementation.
       </p>
-      <!-- Featured Projects Gallery -->
-      <!-- Preview Cards to other pages -->
     </main>
+
     <footer>
       <p>
         <a href="https://github.com/emily-gerard" target="_blank">GitHub</a>
