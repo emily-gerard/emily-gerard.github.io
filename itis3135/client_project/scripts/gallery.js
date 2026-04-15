@@ -1,19 +1,5 @@
 let slideIndex = 1;
 
-document.addEventListener("DOMContentLoaded", function () {
-  showSlides(slideIndex);
-});
-
-function plusSlides(n) {
-  slideIndex += n;
-  showSlides(slideIndex);
-}
-
-function currentSlide(n) {
-  slideIndex = n;
-  showSlides(slideIndex);
-}
-
 function showSlides(n) {
   const slides = document.getElementsByClassName("slides");
   const dots = document.getElementsByClassName("demo");
