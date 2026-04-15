@@ -261,6 +261,11 @@ footer {
   flex: 1 1 45%;
 }
 
+.d_container {
+  position: relative;
+  flex: 1 1 30%;
+}
+
 /* Make the image to responsive */
 .image {
   width: 100%;
