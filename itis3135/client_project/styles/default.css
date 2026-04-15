@@ -259,7 +259,7 @@ footer {
 /*Gallery */
 .g_container {
   position: relative;
-  width: 50%;
+  flex: 1 1 45%;
 }
 
 /* Make the image to responsive */
@@ -275,7 +275,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #008cba;
+  background-color: var(--cinnabar);
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -291,10 +291,15 @@ footer {
 /* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
 .text {
   color: white;
-  font-size: 20px;
+  font-size: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+.useful {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
