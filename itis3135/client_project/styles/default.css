@@ -265,7 +265,9 @@ footer {
 
 .d_container {
   position: relative;
-  flex: 1 1 30%;
+  flex: 1 1 400px;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 /* Make the image to responsive */
@@ -295,6 +297,10 @@ footer {
   transform: scale(1);
 }
 
+.d_container {
+  transform: scale(1);
+}
+
 /* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
 .text {
   color: white;
@@ -306,6 +312,12 @@ footer {
   text-align: center;
 }
 .useful {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.decor {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
