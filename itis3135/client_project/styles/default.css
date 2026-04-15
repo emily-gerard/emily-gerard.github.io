@@ -204,6 +204,8 @@ footer {
   font-size: 20px;
   user-select: none;
   -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   background-color: rgba(0, 0, 0, 0.45);
   border-radius: 4px;
 }
