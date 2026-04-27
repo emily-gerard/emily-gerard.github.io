@@ -1,16 +1,16 @@
 let slideIndex = 1;
 
-function plusSlides(n) {
+const plusSlides = function (n) {
   slideIndex += n;
   showSlides(slideIndex);
-}
+};
 
-function currentSlide(n) {
+const currentSlide = function (n) {
   slideIndex = n;
   showSlides(slideIndex);
-}
+};
 
-function showSlides(n) {
+const showSlides = function (n) {
   const slides = document.getElementsByClassName("slides");
   const dots = document.getElementsByClassName("demo");
   const captionText = document.getElementById("caption");
@@ -38,7 +38,7 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].classList.add("active");
   captionText.textContent = dots[slideIndex - 1].alt;
-}
+};
 
 window.plusSlides = plusSlides;
 window.currentSlide = currentSlide;
