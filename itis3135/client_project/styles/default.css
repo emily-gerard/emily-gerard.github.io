@@ -135,7 +135,6 @@ label {
 input,
 textarea {
   display: block;
-  width: 100%;
   border: 1px solid var(--cerulean);
   border-radius: 6px;
   font-family: "Inter", sans-serif;
@@ -143,6 +142,11 @@ textarea {
   margin-bottom: 20px;
   background-color: var(--white);
   color: #111;
+}
+
+form input,
+form textarea {
+  width: 100%;
 }
 
 textarea {
@@ -319,11 +323,6 @@ footer {
 .faq-section {
   max-width: 850px;
   margin: 0 auto;
-}
-
-.faq-section h2 {
-  text-align: left;
-  margin-bottom: 20px;
 }
 
 .faq-item {
