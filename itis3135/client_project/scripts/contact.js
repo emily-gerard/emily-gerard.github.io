@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     emailjs
-      .send("service_r0s10lo", "template_3l6oghc", params)
+      .send("service_r0s10lo", "template_3i6oghc", params)
       .then(() => {
         alert("Request sent successfully!");
         form.reset();
