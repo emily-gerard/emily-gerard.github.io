@@ -386,11 +386,6 @@ footer {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.log-card h3 {
-  margin-top: 0;
-  color: var(--white);
-}
-
 .error {
   color: var(--cinnabar);
   font-weight: bold;
