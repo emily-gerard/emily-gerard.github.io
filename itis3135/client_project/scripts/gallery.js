@@ -1,7 +1,4 @@
 let slideIndex = 1;
-document.addEventListener("DOMContentLoaded", function () {
-  showSlides(slideIndex);
-});
 
 function plusSlides(n) {
   slideIndex += n;
@@ -12,6 +9,7 @@ function currentSlide(n) {
   slideIndex = n;
   showSlides(slideIndex);
 }
+
 function showSlides(n) {
   const slides = document.getElementsByClassName("slides");
   const dots = document.getElementsByClassName("demo");
@@ -41,3 +39,10 @@ function showSlides(n) {
   dots[slideIndex - 1].classList.add("active");
   captionText.textContent = dots[slideIndex - 1].alt;
 }
+
+window.plusSlides = plusSlides;
+window.currentSlide = currentSlide;
+
+document.addEventListener("DOMContentLoaded", function () {
+  showSlides(slideIndex);
+});
