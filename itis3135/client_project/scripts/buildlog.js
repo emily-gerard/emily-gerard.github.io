@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const buildLog = document.getElementById("build-log");
 
-  fetch("components/buildlog.json")
+  fetch("../components/buildlog.json")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Build log could not be loaded.");
