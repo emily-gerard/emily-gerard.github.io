@@ -1,0 +1,67 @@
+[
+  {
+    "category": "Tools / Useful Prints",
+    "items": [
+      {
+        "title": "Coin Sorter",
+        "image": "images/coin.jpeg",
+        "alt": "coin sorter",
+        "time": "11.1 hours",
+        "filament": "294 grams"
+      },
+      {
+        "title": "Cord Organizer",
+        "image": "images/cords.jpeg",
+        "alt": "cord organizer",
+        "time": "2.0 hours",
+        "filament": "73 grams"
+      }
+    ]
+  },
+  {
+    "category": "Interactive Objects",
+    "items": [
+      {
+        "title": "Fidget Egg (Brian)",
+        "image": "images/brian.jpeg",
+        "alt": "fidget egg",
+        "time": "3.7 hours",
+        "filament": "63 grams"
+      },
+      {
+        "title": "Fidget Block",
+        "image": "images/block.jpeg",
+        "alt": "fidget block",
+        "time": "2.0 hours",
+        "filament": "27 grams"
+      }
+    ]
+  },
+  {
+    "category": "Decorative Prints",
+    "items": [
+      {
+        "title": "Sitting Alien",
+        "image": "images/alien.jpeg",
+        "alt": "Alien sitting",
+        "time": "5.1 hours",
+        "filament": "94 grams"
+      },
+      {
+        "title": "3D Image",
+        "image": "images/pookie.jpeg",
+        "alt": "3D Images",
+        "time": "9.6 hours",
+        "filament": "127 grams"
+      },
+      {
+        "title": "Benchy",
+        "image": "images/benchy.jpeg",
+        "alt": "ship",
+        "time": "0.32 hours",
+        "filament": "12 grams",
+        "fun_fact": "Benchy is the world's most popular 3D printed benchmark model!"
+      }
+    ]
+  }
+]
