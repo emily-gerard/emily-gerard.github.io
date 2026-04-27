@@ -1,23 +1,28 @@
+(function () {
+  emailjs.init("DKNnbEOsUd-AVqyDZ");
+})();
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("request-form");
 
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-    const first = document.getElementById("first").value;
-    const last = document.getElementById("last").value;
-    const email = document.getElementById("email").value;
-    const request = document.getElementById("request").value;
+    const params = {
+      first: document.getElementById("first").value,
+      last: document.getElementById("last").value,
+      email: document.getElementById("email").value,
+      request: document.getElementById("request").value,
+    };
 
-    const subject = `Build Request from ${first} ${last}`;
-    const body = `Name: ${first} ${last}
-  Email: ${email}
-  
-  Build Request:
-  ${request}`;
-
-    window.location.href = `mailto:ccarey12@charlotte.edu?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
+    emailjs
+      .send("service_r0s10lo", "template_3l6oghc", params)
+      .then(() => {
+        alert("Request sent successfully!");
+        form.reset();
+      })
+      .catch((error) => {
+        alert("Failed to send request.");
+        console.error(error);
+      });
   });
 });
