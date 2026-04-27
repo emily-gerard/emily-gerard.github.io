@@ -380,7 +380,7 @@ footer {
 
 .log-card {
   background-color: var(--cerulean);
-  color: var(--brown-red);
+  color: var(--white);
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
