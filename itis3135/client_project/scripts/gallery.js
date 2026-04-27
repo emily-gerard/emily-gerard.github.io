@@ -1,48 +1,33 @@
-let slideIndex = 1;
+document.addEventListener("DOMContentLoaded", () => {
+  let slideIndex = 1;
 
-const plusSlides = function (n) {
-  slideIndex += n;
-  showSlides(slideIndex);
-};
+  function showSlides(n) {
+    const slides = document.getElementsByClassName("slides");
+    const dots = document.getElementsByClassName("demo");
+    const captionText = document.getElementById("caption");
 
-const currentSlide = function (n) {
-  slideIndex = n;
-  showSlides(slideIndex);
-};
+    if (slides.length === 0 || dots.length === 0 || !captionText) return;
 
-const showSlides = function (n) {
-  const slides = document.getElementsByClassName("slides");
-  const dots = document.getElementsByClassName("demo");
-  const captionText = document.getElementById("caption");
+    if (n > slides.length) slideIndex = 1;
+    if (n < 1) slideIndex = slides.length;
 
-  if (slides.length === 0 || dots.length === 0 || !captionText) {
-    return;
+    for (let slide of slides) slide.style.display = "none";
+    for (let dot of dots) dot.classList.remove("active");
+
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].classList.add("active");
+    captionText.textContent = dots[slideIndex - 1].alt;
   }
 
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
+  window.plusSlides = function (n) {
+    slideIndex += n;
+    showSlides(slideIndex);
+  };
 
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
+  window.currentSlide = function (n) {
+    slideIndex = n;
+    showSlides(slideIndex);
+  };
 
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  for (let i = 0; i < dots.length; i++) {
-    dots[i].classList.remove("active");
-  }
-
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].classList.add("active");
-  captionText.textContent = dots[slideIndex - 1].alt;
-};
-
-window.plusSlides = plusSlides;
-window.currentSlide = currentSlide;
-
-document.addEventListener("DOMContentLoaded", function () {
   showSlides(slideIndex);
 });
