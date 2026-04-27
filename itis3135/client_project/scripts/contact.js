@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       first: document.getElementById("first").value,
       last: document.getElementById("last").value,
       email: document.getElementById("email").value,
-      request: document.getElementById("request").value,
+      request: document.getElementById("request").value
     };
 
     emailjs
