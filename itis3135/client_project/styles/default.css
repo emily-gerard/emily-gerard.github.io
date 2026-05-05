@@ -82,7 +82,7 @@ a:link {
 }
 
 a:visited {
-  color: #eadcff;
+  color: var(--coffee-bean);
 }
 
 a:hover,
